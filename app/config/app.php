@@ -125,7 +125,6 @@ return array(
         'Chrisbjr\ApiGuard\ApiGuardServiceProvider',
         'Zizaco\Confide\ConfideServiceProvider',
         'Zizaco\Entrust\EntrustServiceProvider',
-        'Chrisbjr\Kitchen\KitchenServiceProvider',
         'Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 
