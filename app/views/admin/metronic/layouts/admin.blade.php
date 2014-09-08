@@ -20,31 +20,31 @@
     <meta content="" name="author"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/font-awesome/css/font-awesome.min.css') }}}" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/simple-line-icons/simple-line-icons.min.css') }}}" rel="stylesheet"
+    <link href="{{{ asset('assets/plugins/font-awesome/css/font-awesome.min.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ asset('assets/plugins/simple-line-icons/simple-line-icons.min.css') }}}" rel="stylesheet"
           type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/bootstrap/css/bootstrap.min.css') }}}" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/uniform/css/uniform.default.css') }}}" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css') }}}" rel="stylesheet"
+    <link href="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap/css/bootstrap.min.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/global/plugins/uniform/css/uniform.default.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css') }}}" rel="stylesheet"
           type="text/css"/>
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
-    <link href="{{{ asset('assets/global/plugins/gritter/css/jquery.gritter.css') }}}" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css') }}}" rel="stylesheet"
+    <link href="{{{ HTML::amazonCloudfront('assets/global/plugins/gritter/css/jquery.gritter.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css') }}}" rel="stylesheet"
           type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/fullcalendar/fullcalendar/fullcalendar.css') }}}" rel="stylesheet"
+    <link href="{{{ HTML::amazonCloudfront('assets/global/plugins/fullcalendar/fullcalendar/fullcalendar.css') }}}" rel="stylesheet"
           type="text/css"/>
-    <link href="{{{ asset('assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css') }}}" rel="stylesheet" type="text/css"/>
     <!-- END PAGE LEVEL PLUGIN STYLES -->
     <!-- BEGIN PAGE STYLES -->
-    <link href="{{{ asset('assets/admin/pages/css/tasks.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/admin/pages/css/tasks.css') }}}" rel="stylesheet" type="text/css"/>
     <!-- END PAGE STYLES -->
     <!-- BEGIN THEME STYLES -->
-    <link href="{{{ asset('assets/global/css/components.css') }}}" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/global/css/plugins.css') }}}" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/admin/layout/css/layout.css') }}}" rel="stylesheet" type="text/css"/>
-    <link href="{{{ asset('assets/admin/layout/css/themes/default.css') }}}" rel="stylesheet" type="text/css" id="style_color"/>
-    <link href="{{{ asset('assets/admin/layout/css/custom.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/global/css/components.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/global/css/plugins.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/admin/layout/css/layout.css') }}}" rel="stylesheet" type="text/css"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/admin/layout/css/themes/default.css') }}}" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="{{{ HTML::amazonCloudfront('assets/admin/layout/css/custom.css') }}}" rel="stylesheet" type="text/css"/>
     <!-- END THEME STYLES -->
     <link rel="shortcut icon" href="{{ url('favicon.ico') }}"/>
 </head>
@@ -67,7 +67,7 @@
         <!-- BEGIN LOGO -->
         <div class="page-logo">
             <a href="{{ url(Config::get('kitchen::adminRoute')) }}">
-                <img src="{{{ asset('assets/admin/layout/img/logo.png') }}}" alt="logo" class="logo-default"/>
+                <img src="{{{ HTML::amazonCloudfront('assets/admin/layout/img/logo.png') }}}" alt="logo" class="logo-default"/>
             </a>
 
             <div class="menu-toggler sidebar-toggler hide">
@@ -193,40 +193,40 @@
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
-<script src="{{{ asset('assets/global/plugins/respond.min.js') }}}"></script>
-<script src="{{{ asset('assets/global/plugins/excanvas.min.js') }}}"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/respond.min.js') }}}"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/excanvas.min.js') }}}"></script>
 <![endif]-->
-<script src="{{{ asset('assets/global/plugins/jquery-1.11.0.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/jquery-migrate-1.2.1.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery-1.11.0.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery-migrate-1.2.1.min.js') }}}" type="text/javascript"></script>
 <!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-<script src="{{{ asset('assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/bootstrap/js/bootstrap.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/jquery.blockui.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/jquery.cokie.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/uniform/jquery.uniform.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap/js/bootstrap.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery.blockui.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery.cokie.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/uniform/jquery.uniform.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js') }}}" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="{{{ asset('assets/global/plugins/flot/jquery.flot.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/flot/jquery.flot.resize.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/flot/jquery.flot.categories.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/jquery.pulsate.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/bootstrap-daterangepicker/moment.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js') }}}"
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/flot/jquery.flot.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/flot/jquery.flot.resize.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/flot/jquery.flot.categories.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery.pulsate.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap-daterangepicker/moment.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js') }}}"
         type="text/javascript"></script>
 <!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
-<script src="{{{ asset('assets/global/plugins/fullcalendar/fullcalendar/fullcalendar.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/jquery.sparkline.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/gritter/js/jquery.gritter.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/fullcalendar/fullcalendar/fullcalendar.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/jquery.sparkline.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/gritter/js/jquery.gritter.js') }}}" type="text/javascript"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="{{{ asset('assets/global/plugins/datatables/media/js/jquery.dataTables.min.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/global/scripts/metronic.js') }}}" type="text/javascript"></script>
-<script src="{{{ asset('assets/admin/layout/scripts/layout.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/datatables/media/js/jquery.dataTables.min.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/global/scripts/metronic.js') }}}" type="text/javascript"></script>
+<script src="{{{ HTML::amazonCloudfront('assets/admin/layout/scripts/layout.js') }}}" type="text/javascript"></script>
 @section('javascript')
 @show
 <!-- END PAGE LEVEL SCRIPTS -->
