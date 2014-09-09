@@ -12,9 +12,10 @@ return array(
     |
     */
 
-    'admin.route' => 'admin',
+    'admin.route'       => 'admin',
 
-    'admin.template' => 'admin/metronic/',
+    'admin.template'    => 'admin/metronic/',
 
+    'admin.s3.location' => '',
 
 );

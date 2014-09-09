@@ -1,4 +1,4 @@
-@extends('admin.layouts.admin')
+@extends('admin.metronic.layouts.admin')
 
 {{-- Page Title --}}
 @section('page_title')
@@ -13,7 +13,7 @@ user management
 @section('breadcrumbs')
 <li>
     <i class="fa fa-home"></i>
-    <a href="{{{ url(Config::get('kitchen::adminRoute')) }}}">Dashboard</a>
+    <a href="{{{ url(Config::get('kitchen.admin.route')) }}}">Dashboard</a>
     <i class="fa fa-angle-right"></i>
 </li>
 <li>

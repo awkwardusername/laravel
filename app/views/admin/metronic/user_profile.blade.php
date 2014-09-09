@@ -1,4 +1,4 @@
-@extends('admin.layouts.admin')
+@extends('admin.metronic.layouts.admin')
 
 {{-- Page Title --}}
 @section('page_title')
@@ -13,11 +13,11 @@ statistics and more
 @section('breadcrumbs')
 <li>
     <i class="fa fa-home"></i>
-    <a href="{{{ url(Config::get('kitchen::adminRoute')) }}}">Dashboard</a>
+    <a href="{{{ url(Config::get('kitchen.admin.route')) }}}">Dashboard</a>
     <i class="fa fa-angle-right"></i>
 </li>
 <li>
-    <a href="{{ url(Config::get('kitchen::adminRoute').'/users') }}">Users</a>
+    <a href="{{ url(Config::get('kitchen.admin.route').'/users') }}">Users</a>
     <i class="fa fa-angle-right"></i>
 </li>
 <li>
@@ -43,7 +43,7 @@ statistics and more
                         <div class="col-md-3">
                             <ul class="ver-inline-menu tabbable margin-bottom-10">
                                 <li>
-                                    <img src="{{Gravatar::src(Confide::user()->email, 229)}}" class="img-responsive" alt=""/>
+                                    <img src="{{Gravatar::src($user->email, 229)}}" class="img-responsive" alt="" style="width: 100%"/>
                                 </li>
                                 <li class="active">
                                     <a data-toggle="tab" href="#tab_1-1">

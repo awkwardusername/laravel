@@ -9,7 +9,7 @@ class User extends ConfideUser
 
     public function userProfile()
     {
-        return $this->hasOne('Chrisbjr\Kitchen\UserProfile');
+        return $this->hasOne('UserProfile');
     }
 
     public function getAdminProfileUrl()

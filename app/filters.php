@@ -63,6 +63,7 @@ Route::filter('auth.admin', function ()
 
     if (!Entrust::hasRole('Admin')) // Checks the current user
     {
+        // TODO: return an unauthorized page
         App::abort(403);
     }
 });
